@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Arsenal:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Codystar:wght@300&display=swap" rel="stylesheet">
+    <style type="text/css">
+    #tara {
+        font-family: 'Arsenal', sans-serif;
+        font-size: 45px;
+       color:#6495ED;
+    }
+#hi {
+font-family:'Codystar', cursive;
+        font-size: 25px;
+        color:#00FA9A;
+}       
+
+#fun{
+
+    font-family: 'Arsenal', sans-serif;
+        font-size: 25px;
+        color:#6495ED;
+}
+
+#emoji{
+font-size: 40px;
+}
+   
+#hover{
+font-size: 20px;
+font-family: 'Arsenal', sans-serif;
+position:relative;
+top:250px;
+
+
+
+}
+    #fall {
+        
+position:relative;
+ top:-60px;
+        width: 300px;
+        height: 300px;
+
+                background-image: url(fall.jpg);
+
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+                animation-name: seasons;
+
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes seasons {
+
+        0% {
+            background-image: url(fall.jpg);
+        }
+
+        25% {
+            background-image: url(winter.jpg);
+        }
+
+        50% {
+            background-image: url(spring.jpg);
+
+        }
+
+        75% {
+            background-image: url(summer.jpg);
+        }
+
+    }
+/*
+    #fall:hover {
+        transition-duration: 3s;
+
+        /*        background-image: url(winter.jpg);*/
+*/
+    }
+
+
+
+    /*#winter{
+	background-image: url(winter.jpg);
+}*/
+
+
+    /*#winter:hover{
+background-image: url(spring.jpg); 
+}*/
+    </style>
+</head>
+
+<body style="background-color:gray;">
+   
+
+    <center>
+        <p id="tara">Tree going through seasons
+        </p>
+  <p id="emoji"> 🌳🌳🌳</p>
+<p id= "fun"> By Tara Kamshad </p>
+
+<p id="hi"> Hover over the tree to see the seasons change!</p>
+ 
+    </center>
+<center>
+    <p id = "hover"> 
+        You can also hover over the tree to hear "I don't want to wait for
+         Summer" by Mishaal play! </p>
+</center>
+<audio src="yes.mp3" id="yes"></audio>
+
+    <center>
+        <div id="fall"></div>
+    </center>
+    <script type="text/javascript">
+    var song = document.getElementById("yes");
+    var fall = document.getElementById("fall");
+
+
+    fall.addEventListener('mouseenter',
+        function() {
+            song.play();
+            fall.style.animationName = "seasons";
+            
+         
+        })
+
+    fall.addEventListener('mouseleave',
+        function() {
+            song.pause();
+            fall.style.animationName = "tara";
+    
+
+        })
+    </script>
+</body>
+
+</html>
