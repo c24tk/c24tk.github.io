@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+
+	<style type="text/css">
+
+#a1{
+	color: lightblue;
+}	
+#title{
+font-size: 30px;
+color: grey;
+font-family: 'Raleway', sans-serif;
+position: relative;
+top: -500px;
+left: 10px;
+}	
+#p1{
+font-size: 20px;
+color: grey;
+font-family: 'Raleway', sans-serif;
+position: relative;
+top: -500px;
+left: 10px;
+}	
+#heart{
+	background-image: url(heart2.png);
+	position: relative;
+	top: -65px;
+	width: 500px;
+	height: 500px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	z-index: -1;
+}
+
+#blue{
+	width: 50px;
+	height: 50px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	position: relative;
+	animation-name: blueflow;
+	animation-duration: 15s;
+}
+#blue2{
+
+	width: 50px;
+	height: 50px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	position: relative;
+	animation-name: blueflow2;
+animation-duration: 15s;
+}
+
+@keyframes blueflow{
+0% {background-image: url(blue.png);left: 490px;
+top: 90px;}
+8% {background-image: url(blue.png);left: 500px;
+	top: 270px;}
+16% {background-image: url(blue.png);left:570px;
+top: 380px;}
+
+24% {background-image: url(blue.png);left: 610px;
+top: 200px;}
+
+32% {background-image: url(blue.png);left: 470px;
+top: 180px;
+}
+40% {background-image: url(blue.png);left: 440px;
+top: 210px;}
+48% {background-image: url(red.png);left: 440px;
+top: 210px;}
+56%{background-image: url(red.png);left: 620px;
+top: 215px;}
+64%{background-image: url(red.png);left: 640px;
+top: 260px;} 
+72% {background-image: url(red.png);left: 680px;
+top: 380px;} 
+80% {background-image: url(red.png);left: 580px;
+top: 240px;}
+88% {background-image: url(red.png);left: 540px;
+top: 190px;}
+100% {background-image: url(red.png);left: 540px;
+top: 100px;}
+}
+
+@keyframes blueflow2{
+0% {background-image: url(blue.png);left: 565px;
+top: 410px;}
+8% {background-image: url(blue.png);top: 300px;
+left: 510px;}
+16% {background-image: url(blue.png);left: 590px;
+top: 270px;}
+24% {background-image: url(blue.png);left: 600px;
+top: 230px;}
+32% {background-image: url(blue.png);left: 610px;
+top: 150px;
+}
+40% {background-image: url(blue.png);left: 700px;
+top: 120px;}
+48%{background-image: url(red.png);left: 720px;
+top: 160px;}
+56%{background-image: url(red.png);left: 650px;
+top: 200px;}
+64%{background-image: url(red.png);left: 670px;
+top: 250px;}
+72%{background-image: url(red.png);left: 540px;
+top: 100px;}
+80%{background-image: url(red.png);left: 540px;
+top: 80px;}
+88%{background-image: url(red.png);left:630px;
+top: 80px;}
+100% {background-image: url(red.png);left:640px;
+top: 480px;}
+}
+
+
+
+
+</style>
+
+
+</head>
+<body>
+<div id="blue"></div>
+<div id="blue2"></div>
+<div id ="corner"></div>
+<center><div id ="heart"></div></center>
+<p id="title">Blood Flow Simulator</p>
+<p id="p1">This simulator simulates how blood <br></br> travels through the heart. The blue blood <br></br>  is unoxygenated blood that turns red once it <br></br>  reaches the lungs to represent oxygenated blood.<br></br> If you want to learn more about oxygenated and <br></br> unoxygenated blood you can visit <a href="heart.html" id ="a1">this website</a>.<br></br>  Hope you enjoy! :)  </p>
+<button id="start"></button>
+
+<script type="text/javascript">
+	
+
+
+
+
+
+</script>
+</body>
+</html>
