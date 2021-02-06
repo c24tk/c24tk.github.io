@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+<title>october</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Codystar&display=swap" rel="stylesheet">
+	<style type="text/css">
+		
+#title{
+	font-size: 40px;
+	position: relative;
+	left: 350px;
+}
+
+#p1{
+	font-size: 30px;
+	position: relative;
+	left: 550px;
+}
+
+
+.a{
+	text-decoration: none;
+	color: black;
+}
+.dm{
+
+border-radius: 100%;
+height: 50px;
+width: 50px;
+background-color: #F08080;
+
+position: relative;
+
+
+}
+
+
+
+
+#tvd{
+font-size: 20px;
+color: #B22222;
+position:relative;
+left: 575px;
+}
+#st{
+font-size: 20px;
+color: #8A2BE2;
+position:relative;
+left: 625px;
+}
+#p4{
+font-size: 20px;
+color:#B0C4DE;
+position:relative;
+left: 590px;
+}
+#p3{
+font-size: 20px;
+color: gray;
+position:relative;
+left: 480px;
+}
+#total{
+font-size: 40px;
+color: gray;
+position: relative;
+left: 80px;
+top: 1025px;
+}
+body{
+	background-color: white;
+	margin: 0px;
+	width: 710px;
+	height: 1745px;
+
+
+}
+
+.a{
+	text-decoration: none;
+	color: black;
+
+}
+
+
+#clear{
+	width: 70px;
+	height: 40px;
+	font-size: 30px;
+	background-color: gray;
+	text-align: center;
+	font-family: 'Shadows Into Light', cursive;
+	left: 20px;
+	position: absolute;
+	top: 290px;
+
+	}
+
+	#p2{
+		font-size: 30px;
+		color: gray;
+		font-family: 'Codystar', cursive;
+		position: relative;
+		left: 295px;
+
+}
+.circle{
+width: 50px;
+height: 50px;
+background-color: #B22222;
+border-radius: 100%;
+position: absolute;
+transition: 1s;
+
+
+}
+.circle2{
+width: 50px;
+height: 50px;
+background-color:#8A2BE2;
+border-radius: 100%;
+position: absolute;
+transition: 2s;
+
+
+}
+.circle3{
+width: 50px;
+height: 50px;
+background-color:#B0C4DE;
+border-radius: 100%;
+position: absolute;
+transition: 2s;
+
+
+}
+
+#box{
+	width: 80%;
+	height: 700px;
+	display: inline-block;
+	position: absolute;
+	left: 150px;
+top: 500px;
+	background-color: white;
+	padding-right:100px;
+	padding-top:100px;
+}
+
+#box1{
+	width: 20%;
+	position:absolute;
+	}
+
+#office{
+	background-image: url(greys.jpg);
+	height: 200px;
+	width: 200px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	z-index: 1;
+	left: 480px;
+	position: relative;
+}
+
+
+#vampire{
+	background-image: url(vampire.jpg);
+	height: 200px;
+	width: 200px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	z-index: 1;
+	left: 680px;
+	top: -200px;
+	position: relative;
+}
+
+#stranger{
+	background-image: url(cheer.jpg);
+	height: 200px;
+	width: 200px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	z-index: 1;
+	left: 780px;
+	top: -400px;
+	position: relative;
+}
+
+	</style>
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+
+<p id="title">📈 the shows that got me through 2020📈 </p>
+<p id="p1">by tara kamshad</p>
+ <center><p id="p2">october</p></center>
+<p id="p4">grey's anatomy</p> 
+<p id="tvd">the vampire diaries</p>
+
+  
+<p id="p3">one circle = one hour (rounded to the nearest hour)</p>
+<div id="office"></div>
+<div id="vampire"></div>
+
+<a href="data.html"class="a"><div id="clear" >clear</div></a>
+<div id="box1">
+
+
+</div>
+<div id="box">
+<div id="total">total time watched: 3000 minutes (50 hours)</div>
+</div>
+
+
+
+
+<script type="text/javascript">
+	var box = document.getElementById('box');
+
+function makeCircle(){
+	var gold = document.createElement('div');
+	box.appendChild(gold);
+	gold.classList.add('circle');
+	function setPosition(){
+		gold.style.left = Math.random()*100 + "%";
+	gold.style.top = Math.random()*1000 + "px";
+
+};
+setInterval(setPosition, 700);
+};
+
+
+
+for (var i=0; i<2; i=i+1){
+makeCircle();
+
+
+}
+
+
+function makeCircle3(){
+	var gold3 = document.createElement('div');
+	box.appendChild(gold3);
+	gold3.classList.add('circle3');
+	function setPosition(){
+		gold3.style.left = Math.random()*100 + "%";
+	gold3.style.top = Math.random()*1000 + "px";
+
+};
+setInterval(setPosition, 1000);
+};
+
+
+
+for (var x=0; x<49; x=x+1){
+makeCircle3();
+
+
+}
+</script>
+</body>
+</html>
+
+<!-- sam and cat = 286 minutes (january)
+the vampire diaries = 14720 minutes (march - july)
+outer banks = 550 minutes (may)
+cheer = 360 minutes (september)
+greys anatomy = 12840 minutes (august - december)
+schitts creek = 441 minutes (november - december)
+ted lasso = 500 minutes (december) -->

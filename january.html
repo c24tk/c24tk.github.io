@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+<title>january</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Codystar&display=swap" rel="stylesheet">
+	<style type="text/css">
+		
+#title{
+	font-size: 40px;
+}
+
+#p1{
+	font-size: 30px;
+}
+
+
+
+.a{
+	text-decoration: none;
+	color: black;
+}
+.tgp{
+
+border-radius: 100%;
+height: 50px;
+width: 50px;
+background-color: #FFB6C1;
+
+position: absolute;
+transition: 1s;
+}
+.tgp2{
+
+border-radius: 100%;
+height: 50px;
+width: 50px;
+background-color: #90EE90;
+
+position: absolute;
+transition: 1s;
+
+}
+
+
+
+#thegoodplace{
+font-size: 20px;
+color: #FFB6C1;
+transition-duration: 1s;
+}
+#psych1{
+font-size: 20px;
+color: #90EE90;
+transition-duration: 1s;
+}
+#p4{
+font-size: 20px;
+color: #808080;
+transition-duration: 1s;
+}
+#total{
+font-size: 40px;
+color: gray;
+position: relative;
+left: -200px;
+top: 700px;
+}
+body{
+	background-color: white;
+	width: 100%;
+	height: 1548;
+	padding-right: 0px;
+
+
+
+}
+
+.a{
+	text-decoration: none;
+	color: black;
+
+}
+
+
+#clear{
+	width: 70px;
+	height: 40px;
+	font-size: 30px;
+	background-color: gray;
+	z-index: 1;
+	position: relative;
+	left: -590px;
+	top: -500px;
+	text-align: center;
+	font-family: 'Shadows Into Light', cursive;
+
+	}
+#p2{
+		font-size: 30px;
+		color: gray;
+		font-family: 'Codystar', cursive;
+
+
+
+	}
+	#box{
+	width: 100%;
+	height: 1000px;
+	display: inline-block;
+	position: absolute;
+	left: 150px;
+	top: 400px;
+	background-color:white;
+	/*padding-right:100px;
+	padding-top:100px;*/
+	
+
+	}
+/*	#box1{
+	width: 20%;
+	height: 1100px;
+	top: 400px;
+	position:absolute;
+	
+	}
+*/
+#sam{
+
+background-image: url(sam.jpg);
+height: 200px;
+width: 200px;
+background-size: contain;
+background-repeat: no-repeat;
+position: relative;
+left: -50px;
+z-index: 1;
+
+}
+#psych{
+
+background-image: url(psych.png);
+height: 200px;
+width: 200px;
+background-size: contain;
+background-repeat: no-repeat;
+position: relative;
+left: 100px;
+z-index: 1;
+top: -200px;
+
+}
+	</style>
+
+
+
+
+
+
+</head>
+<body>
+
+
+<center><p id="title">📈 the shows that got me through 2020📈 </p></center>
+<center><p id="p1">by tara kamshad</p></center>
+<center><p id="p2">january</p></center>
+<center><p id="thegoodplace">-sam & cat-</p>
+<center><p id="psych1">psych</p></center>
+<center><p id="p4">one circle = one hour (rounded to the nearest hour)</p></center>
+
+<div id="sam"></div>
+<div id="psych"></div>
+<a href="data.html"class="a"><div id="clear" >clear</div></a>
+
+<div id="box1"></div>
+<div id="box"></div>
+<div id="total">total time watched: 780 minutes (13 hours)</div>
+<script type="text/javascript">
+
+var box = document.getElementById('box');
+
+function makeCircle(){
+	var gold = document.createElement('div');
+	box.appendChild(gold);
+	gold.classList.add('tgp');
+	function setPosition(){
+		gold.style.left = Math.random()*100 + "%";
+	gold.style.top = Math.random()*1000 + "px";
+
+};
+setInterval(setPosition, 700);
+};
+
+
+
+for (var i=0; i<10; i=i+1){
+makeCircle();
+
+
+}
+
+function makeCircle2(){
+	var gold2 = document.createElement('div');
+	box.appendChild(gold2);
+	gold2.classList.add('tgp2');
+	function setPosition(){
+		gold2.style.left = Math.random()*100 + "%";
+	gold2.style.top = Math.random()*1000 + "px";
+
+};
+setInterval(setPosition, 700);
+};
+
+
+
+for (var x=0; x<4; x=x+1){
+makeCircle2();
+
+
+}
+
+</script>
+</body>
+</html>
+
+<!-- the good place = 286 minutes (january)
+the vampire diaries = 14720 minutes (march - july)
+outer banks = 550 minutes (may)
+cheer = 360 minutes (september)
+greys anatomy = 12840 minutes (august - december)
+schitts creek = 441 minutes (november - december)
+ted lasso = 500 minutes (december) -->
