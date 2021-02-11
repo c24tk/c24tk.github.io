@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>songs</title>
+<style type="text/css">
+	
+body{
+	background-color: black;
+}
+#title{
+font-size: 50px;
+text-decoration-line: underline;
+ text-decoration-style: wavy;
+ color: white;
+}
+
+.td{
+	position: relative;
+	
+height: 280px;
+border: 5px solid #87CEFA;
+text-align: center;
+background-color:#20B2AA;
+width: 500px;
+
+}
+
+
+table{
+	width: 100%;
+	position: absolute;
+	top: 300px;
+	background-color: black;
+}
+
+#taylor{
+	background-image: url(taylor.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+
+}
+#miley{
+	background-image: url(miley.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+
+}
+#bazzi{
+	background-image: url(bazzi.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+}
+#dua{
+	background-image: url(dua.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+}
+#shawn{
+	background-image: url(shawn.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+}
+#harry{
+	background-image: url(harry.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+}
+#ed{
+	background-image: url(ed.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+}
+#lorde{
+	background-image: url(lorde.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+}
+#box{
+	background-color: black;
+	width: 100%;
+	height: 100px;
+	color: black;
+	text-align: center;
+	font-size: 40px;
+}
+#click{
+	color: white;
+	font-size: 40px;
+	z-index: 1;
+}
+
+</style>
+
+
+</head>
+<body>
+<center><p id="title">my favorite songs from artists</p>
+<p id ="click">click and unclick the images to hear the songs play and pause</p></center>
+<div id ="box"></div>
+
+<table>
+	
+<tr>
+<td id="taylor" class = "td"></td>	
+<td id="miley" class = "td"></td>
+<td id="dua" class = "td"></td>	
+<td id = "lorde" class = "td"></td>
+</tr>
+
+<tr>
+<td id ="bazzi" class = "td"></td>
+<td id ="shawn" class = "td"></td>
+<td id ="harry" class = "td"></td>
+<td id ="ed" class = "td"></td>	
+</tr>
+
+
+
+
+
+
+</table>
+
+<audio src="taylor.mp3" id="taylorsong"></audio>
+<audio src="miley.mp3" id="mileysong"></audio>
+<audio src="bazzi.mp3" id="bazzisong"></audio>
+<audio src="dua.mp3" id="duasong"></audio>
+<audio src="shawn.mp3" id="shawnsong"></audio>
+<audio src="harry.mp3" id="harrysong"></audio>
+<audio src="ed.mp3" id="edsong"></audio>
+<audio src="lorde.mp3" id="lordesong"></audio>
+
+<script type="text/javascript">
+var box = document.getElementById('box');	
+var counter = 0;
+var song = document.getElementById('taylorsong');
+var song1 = document.getElementById('mileysong');
+var song2 = document.getElementById('bazzisong')
+var song3 = document.getElementById('duasong')
+var song4 = document.getElementById('shawnsong')
+var song5 = document.getElementById('harrysong')
+var song6 = document.getElementById('edsong')
+var song7 = document.getElementById('lordesong')
+
+taylor.addEventListener("click", function(){
+
+counter=counter+1;
+if (counter % 2 == 0){
+	taylor.style.backgroundImage = "url(lover.jpg)";
+	taylor.style.backgroundSize = "cover";
+	song.play();
+	box.innerText = "cornelia street";
+	box.style.color="rgb(251,181,220)";
+
+}
+else if (counter % 2 ==1){
+	song.pause();
+	taylor.style.backgroundImage = "url(taylor.jpg)";
+	box.innerText = "";
+}
+
+} )
+
+miley.addEventListener("click", function(){
+	counter=counter+1;
+	if (counter %2 ==0){
+		miley.style.backgroundImage = "url(bangerz.jpg)";
+		song1.play();
+		box.innerText = "we can't stop";
+		box.style.color = "rgb(206,57,131)";
+	}
+else if (counter % 2 ==1){
+	song1.pause();
+	miley.style.backgroundImage = "url(miley.jpg)";
+	box.innerText = "";
+}
+
+})
+
+bazzi.addEventListener("click", function(){
+	counter=counter+1;
+	if (counter %2 ==0){
+		bazzi.style.backgroundImage = "url(cosmic.jpg)";
+		bazzi.style.backgroundSize = "cover";
+		song2.play();
+		box.innerText = "beautiful";
+		box.style.color = "rgb(21,71,110)";
+	}
+else if (counter % 2 ==1){
+	song2.pause();
+	bazzi.style.backgroundImage = "url(bazzi.jpg)";
+	box.innerText = "";
+}
+
+})
+
+dua.addEventListener("click", function(){
+	counter=counter+1;
+	if (counter %2 ==0){
+		dua.style.backgroundImage = "url(duacover.jpg)";
+		dua.style.backgroundSize = "cover";
+		song3.play();
+		box.innerText = "levitating";
+		box.style.color = "white";
+	}
+else if (counter % 2 ==1){
+	song3.pause();
+	dua.style.backgroundImage = "url(dua.jpg)";
+	box.innerText = "";
+}
+
+})
+shawn.addEventListener("click", function(){
+	counter=counter+1;
+	if (counter %2 ==0){
+		shawn.style.backgroundImage = "url(handwritten.jpg)";
+		shawn.style.backgroundSize = "cover";
+		song4.play();
+		box.innerText = "life of the party";
+		box.style.color = "rgb(36, 132, 179)";
+	}
+else if (counter % 2 ==1){
+	song4.pause();
+	shawn.style.backgroundImage = "url(shawn.jpg)";
+	box.innerText = "";
+}
+
+})
+harry.addEventListener("click", function(){
+	counter=counter+1;
+	if (counter %2 ==0){
+		harry.style.backgroundImage = "url(fineline.jpg)";
+		harry.style.backgroundSize = "cover";
+		song5.play();
+		box.innerText = "golden";
+		box.style.color = "rgb(227, 148, 157)";
+	}
+else if (counter % 2 ==1){
+	song5.pause();
+	harry.style.backgroundImage = "url(harry.jpg)";
+	box.innerText = "";
+}
+
+})
+ed.addEventListener("click", function(){
+	counter=counter+1;
+	if (counter %2 ==0){
+		ed.style.backgroundImage = "url(ateam.jpg)";
+		ed.style.backgroundSize = "cover";
+		song6.play();
+		box.innerText = "a team";
+		box.style.color = "	 #e67300";
+	}
+else if (counter % 2 ==1){
+	song6.pause();
+	ed.style.backgroundImage = "url(ed.jpg)";
+	box.innerText = "";
+}
+
+})
+lorde.addEventListener("click", function(){
+	counter=counter+1;
+	if (counter %2 ==0){
+		lorde.style.backgroundImage = "url(melodrama.jpg)";
+		lorde.style.backgroundSize = "cover";
+		song7.play();
+		box.innerText = "perfect places";
+		box.style.color = " rgb(11, 69, 164)";
+	}
+else if (counter % 2 ==1){
+	song7.pause();
+	lorde.style.backgroundImage = "url(lorde.jpg)";
+	box.innerText = "";
+}
+
+})
+</script>
+</body>
+</html>
