@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+
+		body{
+			width: 1200px;
+			padding-right: none;
+		}
+		#tv{
+			width:800px;
+			height:600px;
+			background-image: url(tv.png);
+			background-repeat: no-repeat;
+			background-size: cover;
+			z-index: 1;
+			position: relative;
+			top: -50px;
+
+		}
+#box{
+			width:610px;
+			height:345px;
+			background-repeat: no-repeat;
+			background-size: cover;
+			position: absolute;
+			top: 220px;
+			left: 300px;
+			z-index: 1;
+		}
+		#title{
+			font-size: 50px;
+			color: red;
+
+		}
+		.heart{
+			background-image: url(heart.png);
+			height: 40px;
+			width: 40px;
+			background-size: contain;
+			position: absolute;
+		}
+		.heart1{
+			background-image: url(heart1.png);
+			height: 40px;
+			width: 40px;
+			background-size: contain;
+			position: absolute;
+		}
+	
+	</style>
+</head>
+<body>
+	<center><p id="title">what movie you should watch on Valentine's day</p>
+	
+	<div id="tv"></div>
+		<div id="box"></div>
+</center>
+
+	<script type="text/javascript">
+
+		var box = document.getElementById('box');
+
+		
+		
+		function makeHeart(){
+			var heart = document.createElement('div');
+			heart.classList.add('heart');
+			document.body.appendChild(heart);
+			function setPosition(){
+			heart.style.left = 100 + Math.random()*1000 + "px";
+			heart.style.top = 100 + Math.random()*1000 + "px";
+
+		};
+		setPosition();
+		};
+		
+for (var i=0; i<45; i=i+1){
+makeHeart();
+
+
+}
+
+		function makeHeart1(){
+			var heart1 = document.createElement('div');
+			heart1.classList.add('heart1');
+			document.body.appendChild(heart1);
+			function setPosition1(){
+			heart1.style.left = 100 + Math.random()*1000 + "px";
+			heart1.style.top = 100 + Math.random()*1000 + "px";
+
+		};
+		setPosition1();
+		};
+		
+for (var i=0; i<45; i=i+1){
+makeHeart1();
+
+
+}
+
+var image = ["url(set.jpg)", "url(yesterday.jpg)", "url(blended.jpg)","url(just.jpg)","url(kiss.jpg)","url(la.jpg)","url(revenge.jpg)","url(bride.jpg)","url(ella.jpg)","url(italy.jpg)","url(why.jpg)",]
+		
+
+
+
+ box.addEventListener("click",function (){
+
+var x = Math.round(Math.random()*10)
+console.log(x);
+
+ 	console.log(image[x]);
+
+ 	box.style.backgroundImage = image[x];
+
+ } )
+
+
+
+	</script>
+
+
+</body>
+</html>

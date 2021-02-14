@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		#tv{
+			width:200px;
+			height:200px;
+			background-image:url(tv.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+
+		#title{
+			font-size: 50px;
+			color: blue;
+
+		}
+	
+	</style>
+</head>
+<body>
+	<center><p id="title">what you should watch on valentines day</p>
+	
+	<div id="tv"></div>
+</center>
+
+	<script type="text/javascript">
+
+		var box = document.getElementById('tv');
+
+
+		
+
+		var breakfastFoods = ["pancakes", "blueberries", "chocolate chips", "butter", "maple syrup"] 
+
+
+var color = ["brown", "lightblue", "brown", "yellow", "magenta" ]
+		
+
+
+
+
+ tv.addEventListener("click",function (){
+
+var x = Math.round(Math.random()*4)
+console.log(x);
+
+ 	console.log(breakfastFoods[x]);
+
+ 	box.innerText = breakfastFoods[x];
+ 	box.style.backgroundColor=color[x];
+
+ } )
+
+ 
+
+
+
+	</script>
+
+
+</body>
+</html>
