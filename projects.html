@@ -14,10 +14,10 @@
 
 <style type="text/css">
 #button{
-	 background-color: #FF1493;
-  position: relative;
-top: 210px;
-left: 0px;
+	 background-color: rgb(251,21,126);
+  position: absolute;
+top: 30px;
+left: 10px;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -39,18 +39,22 @@ left: 0px;
 background-color: #ff66b8;
 	transition: 1s;
 }
-	#confetti{
-			width:100%;
-			height:100%;
+	.confetti{
+			width:300px;
+			height:300px;
 			background-size:cover;
-			background-image:url(https://acegif.com/wp-content/uploads/2020/05/confetti.gif);
+			background-image:url(light.png);
 			position:absolute;
-			top: 50px;
 			animation-name:fall;
 			animation-duration:4s;
 /*			animation-iteration-count: infinite;
 */		}
-​
+​#a{
+	left: 300px;
+}
+#b{
+	left: 900px;
+}
 		@keyframes fall{
 ​
 			0%{top:20%;}
@@ -63,7 +67,7 @@ background-color: #ff66b8;
 .dropbtn {
 	position: relative;
 	top: -50px;
-  background-color: #ddccff;
+  background-color: rgb(251,21,126);
   color: white;
   padding: 0px;
   font-size: 26px;
@@ -107,7 +111,7 @@ background-color: #ff66b8;
 
 .dropdown:hover .dropdown-content {display: block;}
 
-.dropdown:hover .dropbtn {background-color:  #e6e6ff
+.dropdown:hover .dropbtn {background-color:  #ff66b8;
 
 }
 
@@ -122,13 +126,13 @@ background-color: #ff66b8;
 	top: -30px;
 	text-align: center;
 	font-size: 30px;
-	color: #ddccff;
+	color: rgb(251,21,126);
 font-family: 'Monda', sans-serif;
 font-weight: bold;
 
 }
 .box:hover{
-background-color:#ddccff	;
+background-color:#ff66b8	;
 	transition: 1s;
 }
 
@@ -140,21 +144,22 @@ tr{
 a{
 	color: grey;
 	text-decoration: none;
-font-family: 'Monda', sans-serif;	font-size: 30px;
+	font-family:'Roboto', sans-serif;
+font-size: 30px;
 
 
 }
 td{
 height: 40px;
 width: 100px;
-border: 10px solid #DDA0DD;
+border: 10px solid white;
 text-align: center;
-background-color: #DDA0DD;
+background-color: white;
 
 
 }	
 body{
-	background-color: #DDA0DD;
+	background-color: white;
 }
 
 
@@ -162,8 +167,8 @@ body{
 
 </head>
 <body>
-<div id="confetti"></div>
-
+<!-- <div id = "a" class="confetti"></div>
+<div id = "b" class="confetti"></div> -->
 
 
 	<center>
@@ -173,7 +178,7 @@ body{
 
 
 	<td>
-			<a href="home.html">
+			<a href="index.html">
 
 		 <div class='box'>home</div>
 		</a>
@@ -215,7 +220,7 @@ body{
     <a href="valentines.html">Valentine's Movies</a>
   </center> 
 
-<a href="playlist.html" id="button">contact me</a>
+<!-- <a href="playlist.html" id="button">contact me</a> -->
 
 </body>
 </html>

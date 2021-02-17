@@ -31,51 +31,88 @@ text-align: center;
 	top: -800px;
 }*/
 #website{
-position: absolute;
-top: 100px;
-left: 600px;
+position: relative;
+top: -80px;
 font-family: 'Monda', sans-serif;
 font-size: 40px;
 color: #778899;
-
-
+font-weight: 900;
+text-align: center;
 }
 #p1{
-position: absolute;
-top: 00px;
-left: 610px;
+position: relative;
+top: -30px;
 font-family: 'Monda', sans-serif;
 font-size: 40px;
 color: white;
 ;
-
+font-weight: 900;
+text-align: center;
 
 }
 
 
+/*#button:{
+	
+	transition: 1s;
+
+}*/
+#button:hover{
+background-color: white;
+	transition: 1s;
+}
+
 
 body{
-	background-color: #FFE4C4;
-	height: 300px;
-	width: 1236px;}
+	background-color: white;
+;
+}
+.box:{
+	
+	transition: 1s;
 
+}
 a{
 	color: gray;
 	text-decoration: none;
 	font-family:'Roboto', sans-serif;
 	font-size: 30px;
-	position: absolute;
-	top: 400px;
+	
+	
+
+
+}
+#welcome{
+	color: gray;
+	text-decoration: none;
+	font-family:'Roboto', sans-serif;
+	font-size: 20px;
 	
 	
 	
 
 
 }
+
+#click{
+	color: gray;
+	text-decoration: none;
+	font-family:'Roboto', sans-serif;
+	font-size: 30px;
+	
+	
+	
+
+
+}
+
+
+
 .box:hover{
-background-color:white;
+background-color:rgb(251,21,126);
 	transition: 1s;
 }
+
 tr{
 		
 
@@ -88,13 +125,48 @@ tr{
 td{
 height: 40px;
 width: 100px;
-border: 10px #FFE4C4;
+border: 10px white;
 text-align: center;
-background-color: #FFE4C4;
-left: 300px;
+background-color:white;
 
 
 }	
+
+
+body{height: 300px;
+width: 1236px;}
+	
+
+.lightning{
+	background-image:url(star.png);
+	background-size:contain;
+	background-repeat: no-repeat;
+	z-index: 2;
+	position: absolute;
+	height: 100px;
+	width: 100px;
+}	
+#box{
+	background-color: white;
+	height: 600px;
+	width: 100%;
+}
+#box1{
+	width: 500px;
+	background-color:rgb(251,21,126);
+	height: 600px;
+	z-index: 1;
+	position: absolute;
+	top: 100px;
+	left: 350px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	text-align: right;
+	font-size: 100px;
+		font-family:'Roboto', sans-serif;
+
+}
+
 </style>
 
 	
@@ -108,32 +180,58 @@ left: 300px;
 		<td>
 			<a href="home.html">
 
-		 <div class='box'> home </div>
+		 <div class='box'>home</div>
 		</a>
 	</td>
 		<td>
 			<a href="journal.html">
 
-		 <div class='box'> journal </div>
+		 <div class='box'>journal</div>
 		</a>
 		</td>
 		
 		<td>
 		 <a href="projects.html">
 
-		 <div class='box'> projects </div>
+		 <div class='box'>projects</div>
 		</a>
 		</td>
 
-	
 
 	</tr>
 
 </table>
+<p id="click">click around the page for a surprise!</p>
 </center>
 
-<p id="p1">tara's </p>
-<p id="website">website</p>
+<div id="box"></div>
+
+
+<script type="text/javascript">
+	
+
+box.addEventListener('click', function makeLight(event){
+	var light = document.createElement('div');
+	light.classList.add("lightning");
+	light.style.position = "absolute";
+	document.body.appendChild(light);
+	light.style.left = event.clientX - 45 + "px";
+	light.style.top = event.clientY - 45 + "px";
+
+});
+
+
+
+
+</script>
+
+<!-- <p id="p1">tara's 
+</p>
+<p id="website">website</p> -->
+
+
+
+<!-- <center><div id="bubble"></div></center> -->
 
 
 </body>
