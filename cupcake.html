@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style type="text/css">
+	
+#cupcake{
+	background-image: url(cupcake.png);
+	height: 1000px;
+	width: 1000px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	position: absolute;
+	top: 200px;
+	left: 150px;
+}
+
+#title{
+	font-size:50px;
+	color: lightpink;
+
+}
+#cherry{
+	height: 100px;
+	width: 100px;
+	background-image: url(cherry.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+#sprinkle{
+	height: 50px;
+	width: 50px;
+	background-image: url(sprinkle.png);
+	background-repeat: no-repeat;
+	background-size: contain;	
+}
+#gummy{
+	height: 50px;
+	width: 50px;
+	background-image: url(gummy.png);
+	background-repeat: no-repeat;
+	background-size: contain;	
+}
+</style>
+
+
+
+</head>
+
+
+
+<body>
+
+<center><p id="title">design a cupcake!</p></center>
+<div id="cupcake"></div>
+<div id="cherry"></div>
+<div id="sprinkle"></div>
+<div id="gummy"></div>
+
+<script type="text/javascript">
+	
+function makeTopping() { 
+        topping = document.createElement("div");
+        topping.style.width = "100px";
+        topping.style.height = "100px";
+    
+        topping.style.position = "absolute";
+       
+        topping.style.backgroundImage = "url("+image+" )";
+       	topping.style.backgroundSize = "contain";
+       	topping.style.backgroundRepeat = "repeat-y";
+       	document.body.style.cursor = "sprinkle.png";
+
+
+ 
+
+        document.body.appendChild(topping);
+
+        topping.style.left = event.clientX - 25+ "px";
+        topping.style.top = event.clientY - 60 + "px";
+
+
+
+    };
+
+cupcake.addEventListener('click', makeTopping)
+
+cherry.addEventListener('click', function(){
+	image = "cherry.png";
+})
+
+sprinkle.addEventListener('click', function(){
+	image = "sprinkle.png";
+})
+
+gummy.addEventListener('click', function(){
+	image = "gummy.png";
+})
+
+
+</script>
+</body>
+</html>
